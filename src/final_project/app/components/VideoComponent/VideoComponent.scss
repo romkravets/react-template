@@ -1,0 +1,24 @@
+@import "~video-react/styles/scss/video-react"; 
+
+.video-header-container{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    border-radius: 50%;
+    top: 40%;
+    left: 50%;
+    z-index: 1;
+    &__arrow-right {
+        width: 0;
+        position: absolute;
+        top: 30%;
+        left: 45%;
+        height: 0px;
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        margin: auto;
+        border-left: 10px solid #c7a17a;
+          }
+}
+

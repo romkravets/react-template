@@ -1,0 +1,10 @@
+.home {
+    display: flex;
+    min-height: 100%;
+    aside {
+      flex: 20% 1 1;
+    }
+    section {
+      flex: 80% 1 1;
+    }
+  }

@@ -1,0 +1,75 @@
+.shop-section-second-container {
+    display: flex;
+    position: relative;
+	top: 0;
+    height: 90vh;
+    background-color: rgb(249, 251, 255);
+    // &__left {
+    //     background-color:rgb(249, 251, 255);
+    //     flex: 0.5;
+    //     padding: 1rem;
+    //     transition: all .2s ease-in-out;
+    // }
+    &__center {
+        background-size: cover;
+        background-position: center;
+        flex: 1;
+        //padding: 1rem;
+        transition: all .2s ease-in-out;
+        padding-left: 6rem;
+    }
+    &__right {
+        background:rgb(65, 81, 103);
+        flex: 0.2;
+        padding: 1rem;
+        display: flex;
+        transition: all .2s ease-in-out;
+    }
+}
+
+//MEDIA QUERIES
+
+@media screen and (max-width: 720px) {
+    .header-container {
+        &__logo {
+            &_img {
+                top: 10%;
+                left: 6%;
+                width: 70.4px;
+                height: 20.4px;
+                position: absolute;
+            }
+        }
+        &__title {
+            font-size: 2rem;
+            left: 3%;
+            &_third-style {
+                padding: 0 0.5rem 0 0.5rem;
+                color: rgb(249, 251, 255);
+                background-color: rgb(199, 161, 122);
+            }
+            &_second-style {
+                padding: 0 1rem 0 0.5rem;
+                color: rgb(249, 251, 255);
+                background-color: rgb(199, 161, 122);
+            }
+        }
+        &__right {
+            background:rgb(65, 81, 103);
+            flex: 0.3;
+            padding: 0.8rem;
+            font-size: 0.6rem;
+            display: flex;
+            flex-direction: row;
+        }
+    }
+  }
+
+// @media screen and (max-width: 600px) {
+
+// }
+
+
+//   @media screen and (max-width: 900px) and (min-width: 600px) {
+      
+// }
