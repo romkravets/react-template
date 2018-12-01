@@ -1,0 +1,82 @@
+.header-menu {
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    flex-direction: column;
+    padding: 0 1rem;
+    justify-content: center;
+    word-wrap: nowrap;
+    &__cart {
+        top: -7%;
+        left: 6%;
+        position: relative;
+        &_link {
+        background-image: url("../../../../common/styles/img/nav/shopping-store-cart-.png");
+        width: 35px;
+        height: 35px;
+        background-size: cover;
+        top: 10%;
+        background-position: right center;
+        }
+      }
+    &__counter-wrapper {
+        position: absolute;
+        top: -18px;
+        left: 10px;
+        background-color: #fff;
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        background-color: rgb(199, 161, 122);
+        border-radius: 50%;
+        padding: 0.8rem;
+    }
+    &__counter {
+        font-size: 0.9rem;
+        color: #fff;
+        position: absolute;
+        top: 4px;
+        right: 8px;
+    }
+
+    &__items {
+        display: flex;
+        flex-direction: column;
+    }
+    &__link {
+        padding: 1rem;
+        color: rgb(237, 240, 245);
+        text-align: left;
+        text-transform: uppercase;
+        white-space: nowrap
+    }
+    &__link:hover {
+        color: rgb(199, 161, 122);
+        transition: all .2s ease-in-out;
+    }
+}
+//MEDIA QUERIES
+
+@media screen and (max-width: 720px) {
+    .header-menu {
+        &__counter-wrapper {
+            top: -10px;
+            right: 2px;
+            width: 10px;
+            height: 10px;
+            padding: 0.5rem;
+        }
+        &__counter {
+            font-size: 0.5rem;
+            top: 3px;
+            right:5px;
+        }
+        &__cart {
+            top: -10%;
+            left: 6%;
+            &_link {
+            width: 25px;
+            height: 25px;
+          }
+        }
+    }
+}

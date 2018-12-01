@@ -1,5 +1,5 @@
 import * as React from 'react';
-import '../TopNavComponent/TopNavComponent.scss';
+import '../navigation/Navigation.scss';
 
 export const Counter = (props) => {
         return  (

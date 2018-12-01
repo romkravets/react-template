@@ -1,0 +1,22 @@
+.tabs-section-container {
+    display: flex;
+    position: relative;
+    height: 794px;
+    width: 100%;
+    min-height: 150px;
+    justify-content: center;
+    align-items: stretch;
+    background-color: rgb(249, 251, 255);
+    &__center {
+        background-color: rgb(237, 240, 245);
+        background-size: cover;
+        background-position: center;
+        flex: 1;
+        padding-left: 1rem;
+    }
+    &__right {
+        background:rgb(249, 251, 255);
+        flex: 0.33;
+        display: flex;
+    }
+}

@@ -1,0 +1,90 @@
+.header-container {
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    height: 100vh;
+    &__left {
+        background-color:rgb(249, 251, 255);
+        flex: 0.5;
+        padding: 1rem;
+    }
+    &__logo {
+        &_img {
+            top: 10%;
+            left: 6%;
+            width: 120.4px;
+            height: 36.4px;
+            position: absolute;
+        }
+    }
+    &__title {
+        position: relative;
+        display: inline-block;
+        text-align: left;
+        text-transform: uppercase;
+        font-size: 3rem;
+        position: absolute;
+        left: 6%;
+        top: 50%;
+        font-weight: 400;
+        color: rgb(65, 81, 103);
+        background-position: calc(100% - 20px) 0;
+        &_second-style {
+            padding: 0 2rem 0 0.5rem;
+            color: rgb(249, 251, 255);
+            background-color: rgb(199, 161, 122);
+        }
+    }
+    &__center {
+        background: url(../../../../common/styles/img/header/header_img-compressor.jpg);
+        background-size: cover;
+        background-position: center;
+        flex: 1;
+        padding: 1rem;
+        cursor: pointer;
+    }
+    &__right {
+        background:rgb(65, 81, 103);
+        flex: 0.33;
+        padding: 1rem;
+        display: flex;
+    }
+}
+
+//MEDIA QUERIES
+
+@media screen and (max-width: 720px) {
+    .header-container {
+        &__logo {
+            &_img {
+                top: 10%;
+                left: 6%;
+                width: 70.4px;
+                height: 20.4px;
+                position: absolute;
+            }
+        }
+        &__title {
+            font-size: 2rem;
+            left: 3%;
+            &_third-style {
+                padding: 0 0.5rem 0 0.5rem;
+                color: rgb(249, 251, 255);
+                background-color: rgb(199, 161, 122);
+            }
+            &_second-style {
+                padding: 0 1rem 0 0.5rem;
+                color: rgb(249, 251, 255);
+                background-color: rgb(199, 161, 122);
+            }
+        }
+        &__right {
+            background:rgb(65, 81, 103);
+            flex: 0.3;
+            padding: 0.8rem;
+            font-size: 0.6rem;
+            display: flex;
+            flex-direction: row;
+        }
+    }
+  }

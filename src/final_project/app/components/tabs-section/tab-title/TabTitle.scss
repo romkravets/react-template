@@ -1,0 +1,22 @@
+.tab-container__composition {
+    padding: 4rem 0 3.5rem 0; 
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+    background-color: rgb(237, 240, 245);
+    &__composition {
+    }
+    &__title {
+        display: flex;
+        flex-direction: column;
+        font-size: 1.7rem;
+    }
+}
+@media screen and (max-width: 720px) {
+    .tab-container__composition {
+        font-size: 0.8rem;
+      &__title {
+          font-size: 1rem;
+      }
+    }
+  }
