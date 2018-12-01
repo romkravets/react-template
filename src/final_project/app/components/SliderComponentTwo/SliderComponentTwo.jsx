@@ -10,6 +10,7 @@ export class SliderComponentTwo extends React.Component {
     constructor(props) {
         super(props);
         this.nextProperty = this.nextProperty.bind(this);
+        this.prevProperty = this.prevProperty.bind(this);
         this.state = {
             properties: dataKeyTwo.properties,
             property: dataKeyTwo.properties[0]
@@ -24,16 +25,27 @@ export class SliderComponentTwo extends React.Component {
         })
       }
 
+      prevProperty() {
+        const indexElement = this.state.property.index-1;
+        this.setState({
+          property: dataKeyTwo.properties[indexElement]
+        })
+      }
+
     render() {
         const {properties, property} = this.state;
         return (
         <div className="section-cards">
+        <button className="section-element__btn_prev"
+        onClick={() => this.prevProperty()}
+        disabled={property.index === 0}></button>
 
-        <div className="page">
         <button className="section-element__btn"
          onClick={() => this.nextProperty()}
         disabled={property.index === dataKeyTwo.properties.length+1}
         ></button>
+        <div className="page">
+       
             <div className="col">
             <div className={`cards-slider active-slide-${property.index+1}`}>
                 <div className="cards-slider-wrapper" className="cards-slider-wrapper" style={{

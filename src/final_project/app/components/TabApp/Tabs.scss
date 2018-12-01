@@ -1,0 +1,268 @@
+.tabs-composition {
+  position: relative;
+  &__img {
+    position: relative;
+    object-fit: contain;
+
+    &_size {
+      position: absolute;
+      display: inline-block;
+      top: 53px;
+      right: 74%;
+    }
+  }
+  &__information {
+      display: flex;
+      flex-direction: column;
+      margin-left: 30%;
+      margin-right: 5%;
+      padding-top: 10%;
+  }
+  &__price {
+    font-family: 'Nunito' sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.2;
+    color: rgb(199, 161, 122);
+    padding-bottom: 12px;
+  }
+  &__label {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.17;
+    color: rgb(35, 44, 56);
+    padding-bottom: 12px;
+  }
+  &__text {
+    font-size: 16px;
+    font-weight: 300;
+    color: rgb(21, 29, 40);
+    padding-bottom: 30px;
+    padding-right: 1%;
+  }
+  &__box_img {
+    padding-top: 5px;
+    display: inline;
+  }
+  &__box-left {
+    padding-left: 3%;
+    display: inline-block;
+  }
+  &__box-right {
+    display: inline-block;
+    padding-left: 10%;
+  }
+  &__pictureleft {
+    display: inline-block;
+    width: 40px;
+    height: 39.7px;
+}
+  &__pictureright {
+      display: inline-block;
+      width: 40px;
+      height: 39.7px;
+      padding-left: 30%;
+  }
+  &__links {
+    padding-top: 46px;
+    display: inline;
+  }
+  &__link {
+    display: inline;
+    padding-left: 30%;
+  }
+
+}
+
+
+@media screen and (max-width: 1221px) {
+  .tabs-composition {
+    position: relative;
+    &__img {
+      &_size {
+        top: 77px;
+        right: 70%;
+        width: 400px;
+      }
+    }
+    &__information {
+        margin-left: 35%;
+        margin-right: 5%;
+        padding-top: 10%;
+      }
+  }
+}
+ 
+
+@media screen and (max-width: 979px) {
+  .tabs-composition {
+    font-size: 14px;
+    position: relative;
+    &__img {
+      &_size {
+        top: 77px;
+        right: 68.4%;
+        width: 350px;
+      }
+    }
+    &__information {
+        margin-left: 35%;
+        margin-right: 3%;
+        padding-top: 13%;
+      }
+
+    &__price {
+      font-size: 16px;
+      padding-bottom: 10px;
+    }
+    &__label {
+      font-size: 20px;
+      font-weight: bold;
+      padding-bottom: 10px;
+    }
+    &__text {
+      font-size: 14px;
+
+      padding-bottom: 20px;
+      padding-right: 1%;
+    }
+    &__box_img {
+      padding-top: 5px;
+    }
+    &__box-left {
+      padding-left: 0%;
+    }
+    &__box-right {
+      padding-left: 9%;
+    }
+    &__pictureleft {
+      width: 40px;
+      height: 39.7px;
+  }
+    &__pictureright {
+
+        width: 40px;
+        height: 39.7px;
+        padding-left: 10%;
+    }
+    &__links {
+      padding-top: 36px;
+    }
+    &__link {
+      padding-left: 20%;
+    }
+  }
+  
+}
+
+@media screen and (max-width: 776px) {
+  .tabs-composition {
+    font-size: 14px;
+    position: relative;
+    &__img {
+      &_size {
+        top: 285px;
+        right: 20%;
+        width: 200px;
+      }
+    }
+    &__information {
+      text-align: center;
+        margin-left: 10%;
+        margin-right: 3%;
+        padding-top: 10%;
+      }
+    &__price {
+      font-size: 16px;
+      padding-bottom: 10px;
+    }
+    &__label {
+      font-size: 24px;
+    }
+    &__text {
+      display: none;
+    }
+    &__box_img {
+      font-size: 13px;
+    }
+    &__box-left {
+      padding-left: 5%;
+    }
+    &__box-right {
+      padding-left: 7%;
+    }
+    &__pictureleft {
+      width: 30px;
+      height: 20px;
+  }
+    &__pictureright {
+        width: 30px;
+        height: 20px;
+        padding-left: 5%;
+    }
+    &__links {
+      text-align: center;
+      padding-top: 36px;
+      display: inline-block;
+    }
+    &__link {
+      display: none;
+    }
+
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// .c-tabs__navigation {
+//   display: flex;
+//   padding: 0;
+// }
+
+// .c-tabs__panel {
+//   display: none;
+//   text-align: left;
+// }
+
+// .c-tabs__panel--selected {
+//   display: block;
+// }
+
+// .c-tabs__button {
+//   border: 1px solid #fff;
+//   cursor: pointer;
+//   flex-grow: 1;
+//   text-align: center;
+//   padding: 10px;
+//   list-style: none;
+// }
+
+// .c-tabs__button--selected {
+//   background-color: rgb(201, 201, 201);
+//   color: #000;
+// }

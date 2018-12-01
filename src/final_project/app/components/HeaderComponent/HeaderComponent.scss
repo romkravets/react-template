@@ -3,6 +3,7 @@
     position: relative;
 	top: 0;
     height: 100vh;
+    //width: 100%;
     &__left {
         background-color:rgb(249, 251, 255);
         flex: 0.5;
@@ -49,7 +50,7 @@
     }
     &__right {
         background:rgb(65, 81, 103);
-        flex: 0.4;
+        flex: 0.33;
         padding: 1rem;
         display: flex;
         transition: all .2s ease-in-out;

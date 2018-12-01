@@ -1,22 +1,21 @@
 @import './variables.scss';
 
-@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700,900');
 @import url('https://fonts.googleapis.com/css?family=Nunito:400,600,700');
 * {
   box-sizing: border-box;
 }
 
 html {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 16px;
-  color: $base-font-color;
+  font-family: "Helvetica Neue","Helvetica","Arial",sans-serif;
+  font-size: $font-size-base;
+  color: $base-font-color; 
 }
 
 body {
   padding: 0;
   margin: 0;
   min-height: 100vh;
-
 }
 
 h1,
@@ -35,7 +34,7 @@ ul {
 }
 
 h2 {
-  font-size: 4.57rem;
+  font-size: 1.9rem;
 }
 
 h3 {

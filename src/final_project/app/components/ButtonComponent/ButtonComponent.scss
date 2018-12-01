@@ -1,8 +1,8 @@
 .btn-all {
     border-radius: 19px;
     border: none;
-    color: #f9fbff;
-    background-color: #c7a17a;
+    color: rgb(249, 251, 255);
+    background-color: rgb(199, 161, 122);
     padding: 10px 19px;
     text-align: center;
     text-decoration: none;
@@ -12,4 +12,18 @@
     transition: all 0.3s;
     width: 150px;
     outline: none;
+    &:hover {
+        background-color: rgb(218, 184, 150);
+        transition: all 1s;
+    }
+    &:link {
+        background-color: rgb(218, 184, 150);
+    }
+    
+    &:visited {
+        background-color: rgb(92, 50, 9);
+    }
+    &:active {
+        background-color: rgb(245, 132, 19);
+    }
 }

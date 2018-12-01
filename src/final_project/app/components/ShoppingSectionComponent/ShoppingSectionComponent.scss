@@ -1,9 +1,10 @@
 .shop-section-first-container {
+    overflow-x: hidden;
     display: flex;
     flex-direction: row-reverse;
     position: relative;
 	top: 0;
-    height: 894px;
+    height: 794px;
     &__center {
         // display: flex;
         // align-items: center;
@@ -14,7 +15,6 @@
     &__right {
         background:rgb(65, 81, 103);
         flex: 0.3;
-        padding: 1rem;
         display: flex;
     }
 }

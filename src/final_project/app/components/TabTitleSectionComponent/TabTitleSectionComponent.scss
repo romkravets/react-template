@@ -1,9 +1,9 @@
-.container__composition {
+.tab-container__composition {
     padding: 4rem 0 3.5rem 0; 
     width: 100%;
     text-align: center;
     font-size: 1rem;
-    background-color: rgb(249, 251, 255);
+    background-color: rgb(237, 240, 245);
     &__composition {
     }
     &__title {
@@ -14,10 +14,10 @@
 }
 
 @media screen and (max-width: 720px) {
-        .container__composition {
-            font-size: 0.8rem;
-          &__title {
-              font-size: 1rem;
-          }
-        }
+    .tab-container__composition {
+        font-size: 0.8rem;
+      &__title {
+          font-size: 1rem;
       }
+    }
+  }

@@ -1,8 +1,10 @@
 .shop-section-second-container {
     display: flex;
+    overflow-x: hidden;
     position: relative;
 	top: 0;
-    height: 90vh;
+    height: 794px;
+    width: 100%;
     background-color: rgb(249, 251, 255);
     // &__left {
     //     background-color:rgb(249, 251, 255);
@@ -14,16 +16,13 @@
         background-size: cover;
         background-position: center;
         flex: 1;
-        //padding: 1rem;
-        transition: all .2s ease-in-out;
-        padding-left: 6rem;
+        padding-left: 1rem;
     }
     &__right {
         background:rgb(65, 81, 103);
-        flex: 0.2;
-        padding: 1rem;
+        flex: 0.33;
+        padding: 0rem;
         display: flex;
-        transition: all .2s ease-in-out;
     }
 }
 

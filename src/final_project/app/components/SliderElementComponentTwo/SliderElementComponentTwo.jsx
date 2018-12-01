@@ -6,7 +6,7 @@ import {ButtonComponent} from "../ButtonComponent/ButtonComponent.jsx";
 
 
  export const SliderElementComponentTwo = ({property}) => {
-    const {index, picture, city, title, link, price, subtitle, old_price} = property;
+    const {index, picture, title, link, price, subtitle, old_price} = property;
     let styles = {
       paddingLeft: '24px',
       marginRight: '10px',
@@ -14,7 +14,7 @@ import {ButtonComponent} from "../ButtonComponent/ButtonComponent.jsx";
     }
     return (
         <div id={`card-${index}`} className="card">
-            <img className="card__img" src={picture} alt={city} />
+            <img className="card__img" src={picture} />
             <div className="card__description">
             <div className="card__details ">
                 <ul className="card__prices">
@@ -28,7 +28,7 @@ import {ButtonComponent} from "../ButtonComponent/ButtonComponent.jsx";
                 </div>
                 <ul className="card__features">
                     <ButtonComponent className="card__link" style={styles}/>
-                    <li className="card__link card__helper">{link}</li>
+                    <li className="card__link card__helper"><a href="#">{link}</a></li>
                 </ul>
             </div>
             </div>

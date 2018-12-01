@@ -10,6 +10,7 @@ export class SliderComponent extends React.Component {
     constructor(props) {
         super(props);
         this.nextProperty = this.nextProperty.bind(this);
+        this.prevProperty = this.prevProperty.bind(this);
         this.state = {
             properties: dataKey.properties,
             property: dataKey.properties[0]
@@ -18,27 +19,36 @@ export class SliderComponent extends React.Component {
 
 
     nextProperty() {
-        const newIndex = this.state.property.index + 1;
+        const indexElement = this.state.property.index + 1;
         this.setState({
-          property: dataKey.properties[newIndex]
+          property: dataKey.properties[indexElement]
+        })
+      }
+
+      prevProperty() {
+        const indexElement = this.state.property.index-1;
+        this.setState({
+          property: dataKey.properties[indexElement]
         })
       }
 
     render() {
         const {properties, property} = this.state;
         return (
-        <div className="App">
-
-  
-
-        <div className="page">
-        <button className="section-element__btn"
+         <div className="section-cards">
+        <button className="section-element__btns_prev"
+        onClick={() => this.prevProperty()}
+        disabled={property.index === 0}></button>
+        <button className="section-element__btns"
          onClick={() => this.nextProperty()}
-        disabled={property.index === dataKey.properties.length-1}
-        >Next</button>
-            <div className="col">
-            <div className={`cards-slider active-slide-${property.index}`}>
-                <div className="cards-slider-wrapper" className="cards-slider-wrapper" style={{
+        disabled={property.index === dataKey.properties.length+1}
+        ></button>
+
+        <div className="pages">
+        
+            <div className="cols">
+            <div className={`cardss-slider actives-slide-${property.index}`}>
+                <div className="cardss-slider-wrapper" className="cardss-slider-wrapper" style={{
                   'transform': `translateX(-${property.index*(100/properties.length)}%)`
                 }}>
                   {
@@ -49,26 +59,6 @@ export class SliderComponent extends React.Component {
         </div>
       </div>
       </div>
-            // <div className="slider-container">
-            //     <div className="slider-container__items slider-container__items_one">
-            //     <div className="slider-container__first-row">
-            //         <div className="slider-container__item_first">1</div>
-            //         <div className="slider-container__item_first">2</div>
-            //         <div className="slider-container__item_first">3</div>
-            //         <div className="slider-container__item_first">4</div>
-            //         <div className="slider-container__item_first">5</div>
-            //     </div>
-            //     </div>
-            //     <div className="slider-container__items slider-container__items_two">
-            //     <div className="slider-container__second-row">
-            //         <div className="slider-container__item_second">1</div>
-            //         <div className="slider-container__item_second">2</div>
-            //         <div className="slider-container__item_second">3</div>
-            //         <div className="slider-container__item_second">4</div>
-            //         <div className="slider-container__item_second">5</div>
-            //     </div>
-            //     </div>
-            // </div>
-        )
-    }
+      )
+  }
 }

@@ -9,7 +9,7 @@ export class TopNavComponent extends React.Component {
     super();
     this.handleClick = this.handleClick.bind(this);
       this.state = {
-        count: 0
+        count: 2
     }
   }
 
