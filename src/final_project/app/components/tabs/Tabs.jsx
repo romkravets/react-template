@@ -32,6 +32,9 @@ class TabsButtons extends Component {
   constructor(props) {
     super(props);
     this.handlerClick = this.handlerClick.bind(this);
+    this.state={
+      isActive: true
+    }
   }
 
   handlerClick(id, e) {
@@ -39,16 +42,20 @@ class TabsButtons extends Component {
   }
 
   render() {
+    let classNames = "tabs__control ";
+    
+    if (this.state.isActive) {
+      classNames += 'tabs__control_active';
+    }
     return (
       <div className="tabs">
         {this.props.items.map((item, id) => (
           <button
             key={id}
-            className="tabs__control"
+            className= {classNames}
             onClick={e => {
               this.handlerClick(id, e);
-            }}
-          >
+            }}>
             {item.props.title}
           </button>
         ))}

@@ -3,6 +3,7 @@ import './Navigation.scss';
 
 import { Counter } from '../counter/Counter.jsx';
 
+
 export class Navigation extends React.Component {
   constructor(props) {
     super(props);
@@ -20,7 +21,6 @@ export class Navigation extends React.Component {
   fetchMenus() {
     setTimeout(() => {
       this.setState((oldState) => {
-        console.log(this.state);
         const newState = Object.assign({}, oldState);
         newState.menu = [
           {
@@ -58,7 +58,6 @@ export class Navigation extends React.Component {
       count: this.state.count + 1
     });
   }
-
 
   render() {
     const listItems = this.state.menu.map((item, i) => {

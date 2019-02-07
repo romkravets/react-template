@@ -10,7 +10,7 @@
         left: 6%;
         position: relative;
         &_link {
-        background-image: url("../../../../common/styles/img/nav/shopping-store-cart-.png");
+        background-image: url("../../../../../assets/images/img/nav/shopping-store-cart-.png");
         width: 35px;
         height: 35px;
         background-size: cover;
@@ -22,7 +22,7 @@
         position: absolute;
         top: -18px;
         left: 10px;
-        background-color: #fff;
+        background-color: rgb(255, 255, 255);
         width: 10px;
         height: 10px;
         position: absolute;
@@ -32,7 +32,7 @@
     }
     &__counter {
         font-size: 0.9rem;
-        color: #fff;
+        color: rgb(255, 255, 255);
         position: absolute;
         top: 4px;
         right: 8px;
@@ -59,8 +59,8 @@
 @media screen and (max-width: 720px) {
     .header-menu {
         &__counter-wrapper {
-            top: -10px;
-            right: 2px;
+            top: -12px;
+            left: 5px;
             width: 10px;
             height: 10px;
             padding: 0.5rem;
@@ -71,11 +71,11 @@
             right:5px;
         }
         &__cart {
-            top: -10%;
+            top: -15%;
             left: 6%;
             &_link {
-            width: 25px;
-            height: 25px;
+            width: 20px;
+            height: 20px;
           }
         }
     }

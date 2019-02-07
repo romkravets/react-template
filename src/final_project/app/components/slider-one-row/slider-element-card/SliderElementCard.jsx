@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 import {Button} from "../../button/Button.jsx";
 import '../SliderOneRow.jsx';
@@ -34,9 +33,5 @@ import '../SliderOneRow.jsx';
             </div>
         </div>
     )
-}
-
-SliderElementCard.propTypes = {
-    property: PropTypes.object.isRequired
 }
 

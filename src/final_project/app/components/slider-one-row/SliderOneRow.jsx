@@ -27,6 +27,7 @@ export class SliderOneRow extends React.Component {
           property: dataKeyTwo.properties[indexElement]
         })
       }
+      
     render() {
         const {properties, property} = this.state;
         return (

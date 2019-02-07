@@ -34,8 +34,11 @@
         font-size: 30px;
         font-weight: 900;
         &_active {
+            width: 88px;
+            height: 154px;
             background-color: #ffffff;
             border-bottom: 3px solid #edf0f5;
+            padding: 1rem;
         }
     }
 }

@@ -36,7 +36,7 @@
         }
     }
     &__center {
-        background: url(../../../../common/styles/img/header/header_img-compressor.jpg);
+        background: url(../../../../../assets/images/img/header/header_img-compressor.jpg);
         background-size: cover;
         background-position: center;
         flex: 1;
@@ -52,7 +52,6 @@
 }
 
 //MEDIA QUERIES
-
 @media screen and (max-width: 720px) {
     .header-container {
         &__logo {

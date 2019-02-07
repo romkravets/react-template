@@ -6,7 +6,7 @@ export const Logo = () => {
         return  (
         <div className="header-container__logo">
                 <a href=""><img className="header-container__logo_img"
-                src={require("../../../../../common/styles/img/header/revo_logo-compressor.png")} 
+                src={require("../../../../../../assets/images/img/header/revo_logo-compressor.png")}
                 alt="Revo"/>
                 </a>
         </div>
