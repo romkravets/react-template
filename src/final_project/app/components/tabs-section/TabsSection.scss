@@ -20,3 +20,9 @@
         display: flex;
     }
 }
+
+@media screen and (max-width: 450px) {
+    .tabs-section-container {
+        display: none;
+        }
+    }

@@ -6,7 +6,7 @@
     justify-content: center;
     word-wrap: nowrap;
     &__cart {
-        top: -7%;
+        //top: -7%;
         left: 6%;
         position: relative;
         &_link {
@@ -59,7 +59,7 @@
 @media screen and (max-width: 720px) {
     .header-menu {
         &__counter-wrapper {
-            top: -12px;
+            //top: -12px;
             left: 5px;
             width: 10px;
             height: 10px;
@@ -71,7 +71,7 @@
             right:5px;
         }
         &__cart {
-            top: -15%;
+            //top: 15%;
             left: 6%;
             &_link {
             width: 20px;
