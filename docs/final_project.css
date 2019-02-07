@@ -9,7 +9,6 @@
       justify-content: center;
   word-wrap: nowrap; }
   .header-menu__cart {
-    top: -7%;
     left: 6%;
     position: relative; }
     .header-menu__cart_link {
@@ -53,7 +52,6 @@
 
 @media screen and (max-width: 720px) {
   .header-menu__counter-wrapper {
-    top: -12px;
     left: 5px;
     width: 10px;
     height: 10px;
@@ -63,7 +61,6 @@
     top: 3px;
     right: 5px; }
   .header-menu__cart {
-    top: -15%;
     left: 6%; }
     .header-menu__cart_link {
       width: 20px;
@@ -894,6 +891,10 @@
         flex: 0.33;
     display: -ms-flexbox;
     display: flex; }
+
+@media screen and (max-width: 450px) {
+  .tabs-section-container {
+    display: none; } }
 .section-cards {
   position: relative; }
 
