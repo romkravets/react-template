@@ -23,7 +23,7 @@
     position: absolute;
     top: -18px;
     left: 10px;
-    background-color: #fff;
+    background-color: white;
     width: 10px;
     height: 10px;
     position: absolute;
@@ -32,7 +32,7 @@
     padding: 0.8rem; }
   .header-menu__counter {
     font-size: 0.9rem;
-    color: #fff;
+    color: white;
     position: absolute;
     top: 4px;
     right: 8px; }
@@ -53,8 +53,8 @@
 
 @media screen and (max-width: 720px) {
   .header-menu__counter-wrapper {
-    top: -10px;
-    right: 2px;
+    top: -12px;
+    left: 5px;
     width: 10px;
     height: 10px;
     padding: 0.5rem; }
@@ -63,11 +63,11 @@
     top: 3px;
     right: 5px; }
   .header-menu__cart {
-    top: -10%;
+    top: -15%;
     left: 6%; }
     .header-menu__cart_link {
-      width: 25px;
-      height: 25px; } }
+      width: 20px;
+      height: 20px; } }
 .header-container {
   display: -ms-flexbox;
   display: flex;
@@ -164,8 +164,6 @@
     border-bottom: 10px solid transparent;
     margin: auto;
     border-left: 10px solid #c7a17a; }
-.trang {
-  background-color: #111; }
 .container__composition {
   padding: 4rem 0 3.5rem 0;
   width: 100%;
@@ -832,8 +830,11 @@
     font-size: 30px;
     font-weight: 900; }
     .tabs__control_active {
+      width: 88px;
+      height: 154px;
       background-color: #ffffff;
-      border-bottom: 3px solid #edf0f5; }
+      border-bottom: 3px solid #edf0f5;
+      padding: 1rem; }
 
 .tabs-content {
   min-width: 794px; }
@@ -1206,8 +1207,6 @@
   -ms-flex-pack: center;
       justify-content: center;
   padding: 2rem; }
-.page-container {
-  max-width: 100%; }
 * {
   box-sizing: border-box; }
 

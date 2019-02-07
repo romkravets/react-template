@@ -1,2 +1,35 @@
 body {
-  background: red; }
+  background: url(./assets/images/header_img-compressor.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover; }
+
+.global-nav {
+  font-family: 'Montserrat', sans-serif;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  margin-top: 20%; }
+  .global-nav__link {
+    text-transform: uppercase;
+    border-radius: 19px;
+    border: none;
+    color: #f9fbff;
+    background-color: #c7a17a;
+    padding: 10px 19px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    width: 150px;
+    outline: none; }
+    .global-nav__link:hover {
+      background-color: #dab896;
+      transition: all 1s; }
+    .global-nav__link:link {
+      background-color: #dab896; }
+    .global-nav__link:active {
+      background-color: #f58413; }

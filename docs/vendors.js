@@ -60,18 +60,18 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 443);
+/******/ 	return __webpack_require__(__webpack_require__.s = 439);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 443:
+/***/ 439:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _jquery = __webpack_require__(444);
+var _jquery = __webpack_require__(440);
 
 var _jquery2 = _interopRequireDefault(_jquery);
 
@@ -82,7 +82,7 @@ window.$ = _jquery2.default; // Here will be vendors libs
 
 /***/ }),
 
-/***/ 444:
+/***/ 440:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
