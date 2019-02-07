@@ -31,3 +31,9 @@
         }
     }
 }
+
+@media screen and (max-width: 450px) {
+    .shop-section-first-container {
+        display: none;
+    }
+}

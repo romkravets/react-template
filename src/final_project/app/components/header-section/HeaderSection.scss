@@ -64,7 +64,7 @@
             }
         }
         &__title {
-            font-size: 2rem;
+            //font-size: 2rem;
             left: 3%;
             &_third-style {
                 padding: 0 0.5rem 0 0.5rem;
@@ -87,3 +87,16 @@
         }
     }
   }
+
+  @media screen and (max-width: 450px) {
+    .header-container {
+        &__title {
+            &_second-style {
+                display: none;
+            }
+            &_third-style {
+                margin-bottom: 5%;
+            }
+        }
+    }
+}

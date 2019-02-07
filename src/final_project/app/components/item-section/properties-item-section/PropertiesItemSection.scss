@@ -5,3 +5,11 @@
     background-color: rgb(249, 251, 255);
     transition:all 0.3s ease;
 }
+
+@media screen and (max-width: 450px) {
+    .properties-container {
+        padding-right: 0;
+        padding-bottom: 0;
+        padding-left: 0;
+    }
+}
