@@ -4,10 +4,10 @@ import { Component } from 'react';
 
 export class App extends Component {
     render() {
-        console.log("efefgef");
+        console.log("Console work");
         return  (
             <div>
-            <div><h1>wefwefwefwefwefwef</h1>
+            <div><h1>Hallo</h1>
             </div>
             </div>
         );
