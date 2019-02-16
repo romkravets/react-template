@@ -1,20 +1,17 @@
 import * as React from 'react';
 import { Component } from 'react';
-import { Home } from './home/Home.jsx';
-import { About } from './about/About.jsx';
-import { Navigation } from './navigation/Navigation.jsx';
-import { Gallery } from './gallery/Gallery.jsx';
+import { Header } from './header/Header.jsx';
+import { Main } from './main/Main.jsx';
+
 
 export class App extends Component {
+    
     render() {
         return  (
-            <div className='global-nav'>
-            <Navigation />
-                <div>
-                {this.props.children}
-                </div>
+            <div>
+                <Header />
+                <Main />
             </div>
-
         );
     }
 }
