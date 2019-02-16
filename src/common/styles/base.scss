@@ -8,14 +8,132 @@
 
 html {
   font-family: "Helvetica Neue","Helvetica","Arial",sans-serif;
-  font-size: $font-size-base;
-  color: $base-font-color; 
 }
 
 body {
   padding: 0;
   margin: 0;
   min-height: 100vh;
+  position: relative;
+  color: rgb(255, 255, 255);
+  background-image: url(https://source.unsplash.com/II2ulqB-118/480x320);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  // Creating dark overlay for background image
+}
+
+@media screen and (min-width: 480px) {
+  body {
+    background-image: url(https://source.unsplash.com/II2ulqB-118/768x1080);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    background-image: url(https://source.unsplash.com/II2ulqB-118/992x1080);
+  }
+}
+
+@media screen and (min-width: 992px) {
+  body {
+    background-image: url(https://source.unsplash.com/II2ulqB-118/1400x1080);
+  }
+}
+
+// Avoid covering the text by overlay
+body .container {
+  z-index: 3;
+}
+
+body:not(.page-gallery) .container {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  color: rgb(255, 255, 255);
+}
+
+body:not(.page-gallery) #root {
+  position: relative;
+  min-height: 320px;
+  height: 100vh;
+  
+}
+
+h1 {
+  margin-top: 32px;
+  margin-bottom: 32px;
+  text-align: center;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+}
+
+p {
+  color: rgb(255, 255, 255);
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+
+img {
+  max-width: 100%;
+}
+
+.nav {
+  justify-content: center;
+  z-index: 99;
+}
+
+.navbar {
+  position: inherit;
+}
+.nav-link {
+  font-weight: 700;
+  color: rgb(238, 238, 238);
+  transition: color .25s ease-out;
+  
+  &:focus,
+  &:hover {
+    color: rgb(170, 170, 170);
+  }
+}
+
+.nav-link-active,
+.nav-link-active:focus {
+  color: rgb(255, 255, 255);
+  border-bottom: 2px solid;
+}
+
+// Add space above and below mobile nav
+@media screen and (max-width: 768px) {
+  .navbar-collapse {
+    margin-top: 40px;
+  }
+  
+  .navbar + div {
+    margin-top: 40px;
+  }
+}
+
+.page-gallery .col-4 {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.page-gallery img {
+  box-shadow: 0 15px 35px rgba(50,50,93,.1),0 5px 15px rgba(0,0,0,.07);
+  transition: box-shadow .25s ease-out;
+
+  &:hover {
+    box-shadow: 0 21px 35px rgba(50,50,93,.1),0 15px 15px rgba(0,0,0,.07);
+  }
 }
 
 h1,
@@ -49,15 +167,6 @@ a {
   text-decoration: none;
   display: inline-block;
 }
-
-section, header {
-  position: relative;
-	background-size: cover;
-	background-position: center;
-	background-color: #fff;
-}
-
-
 
 h1, h2, h3, h4, h5, h6 {
   line-height: 1.4;
