@@ -8,7 +8,7 @@ import { Gallery } from './gallery/Gallery.jsx';
 export class App extends Component {
     render() {
         return  (
-            <div>
+            <div className='global-nav'>
             <Navigation />
                 <div>
                 {this.props.children}
