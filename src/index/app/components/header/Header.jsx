@@ -8,32 +8,50 @@ export class Header extends React.Component {
       super();
       this.state = {
          isOpened: false,
+         menu: [],
       }
-      this.menu = [
-         {
-            title: 'Mac',
-            to: "/"
-         },
-         {
-           title: 'iPhone',
-           to: "/roster"
-        },
-        {
-           title: 'Watch',
-           to: "/schedule"
-        },
-        {
-           title: 'Music',
-           to: "/roster"
-        },
-        {
-           title: 'OSX',
-           to: "/contactus"
-        }
-
-      ];
-
+      this.fetchMenus();
    }
+
+      fetchMenus() {
+         setTimeout(() => {
+            this.setState((oldState) => {
+               const newState = Object.assign({}, oldState);
+               newState.menu = [
+                     {
+                        title: 'Mac',
+                        to: "/"
+                     },
+                     {
+                       title: 'iPhone',
+                       to: "/roster"
+                    },
+                    {
+                       title: 'Watch',
+                       to: "/schedule"
+                    },
+                    {
+                       title: 'Music',
+                       to: "/roster"
+                    },
+                    {
+                       title: 'OSX',
+                       to: "/contactus"
+                    }
+               ];
+               return newState;
+            })
+            console.log(this.state);
+         }, 2500);
+      }
+
+      toggleMenu() {
+         this.setState((oldState) => {
+            const newState = Object.assign({}, oldState);
+            newState.isOpened = !oldState.isOpened;
+            return newState;
+         })
+      }
 
     render() {
          let classNames = "global-nav global-nav_darken ";
@@ -41,7 +59,7 @@ export class Header extends React.Component {
             classNames += 'global-nav_opened';
          }
 
-         const listItems = this.menu.map((item) => {
+         const listItems = this.state.menu.map((item) => {
              return <li class="global-nav__item">
              <Link to={item.to} class="global-nav__link">
                { item.title }
@@ -52,7 +70,7 @@ export class Header extends React.Component {
         return  ( <header className="header">
          <nav className={classNames}>
             <div className="global-nav__mobile-controls">
-            <div className="global-nav__burger burger">
+            <div className="global-nav__burger burger" onClick={this.toggleMenu.bind(this)}>
                <span className="burger__raw"></span>
                <span className="burger__raw"></span>
             </div>
