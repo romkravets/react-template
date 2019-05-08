@@ -13,6 +13,5 @@ const PlayerAPI = {
       return this.players.find(isPlayer)
     }
   }
-  
+
   export default PlayerAPI
-  

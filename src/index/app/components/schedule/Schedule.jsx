@@ -1,7 +1,8 @@
 import * as React from 'react';
+import './Schedule.scss';
 
 const Schedule = () => (
-    <div>
+    <div className="section">
       <ul>
         <li>6/5 @ Evergreens</li>
         <li>6/8 vs Kickers</li>

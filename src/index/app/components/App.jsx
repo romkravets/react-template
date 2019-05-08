@@ -5,7 +5,6 @@ import { Main } from './main/Main.jsx';
 
 
 export class App extends Component {
-    
     render() {
         return  (
             <div>
